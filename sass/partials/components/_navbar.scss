@@ -8,4 +8,7 @@
             @include medidas(220px, auto);
         }
 }
+.collapse {
+    @include flex(row, right, center);
+}
 

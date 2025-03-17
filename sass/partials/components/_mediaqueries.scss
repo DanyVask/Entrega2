@@ -3,10 +3,13 @@
         margin: 0 16px;
     }
     
-    .posicion_logonav {
-        position: relative;
-        display: initial;
+    //NAV
+    .collapse {
+        @include flex(row, left, center);
+        text-align: left;
+        padding-top: 20px;
     }
+    //HOME
     .index-ppal {
         height: 90vh;
         @include flex(column, center, center);
@@ -98,7 +101,8 @@
                 padding: 0;
             }
     }
-    
+
+    //NOSOTROS
     .nosotros-ppal {
         height: 90vh;
         @include flex(column, center, center);
@@ -139,6 +143,7 @@
         }
     }
     
+    //SERVICIOS
     .servicios-ppal {
         height: 70vh;
         @include background(no-repeat, cover, center, fixed);
@@ -200,6 +205,7 @@
         margin-top: 20px;
     }
 
+    //RECOMENDACIONES
     .recomendaciones-ppal {
         height: 90vh;
         @include flex(column, center, center);
@@ -238,6 +244,7 @@
             }
     }
     
+    //RESERVAS
     .reservas-ppal {
         height: 80vh;
         @include flex(column, center, center);
@@ -294,6 +301,7 @@
             }
     }
     
+    //FOOTER
     .content-foot .foot-container {
         @include flex(column, center, center);
             p {

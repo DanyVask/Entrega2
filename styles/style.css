@@ -45,6 +45,13 @@ p {
   height: auto;
 }
 
+.collapse {
+  display: flex;
+  flex-direction: row;
+  justify-content: right;
+  align-items: center;
+}
+
 button {
   background-color: #EF476F;
   font-family: "Londrina Solid", sans-serif;
@@ -507,9 +514,13 @@ button:hover {
   body {
     margin: 0 16px;
   }
-  .posicion_logonav {
-    position: relative;
-    display: initial;
+  .collapse {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+    text-align: left;
+    padding-top: 20px;
   }
   .index-ppal {
     height: 90vh;
