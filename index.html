@@ -5,161 +5,168 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--Bootstrap-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <!--Fuentes-->
-    <!--Poppins-párrafos-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    <!--Fjalla-títulos-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap" rel="stylesheet">
+   <!--AOS-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!--CSS-->
     <link rel="stylesheet" href="./styles/style.css">
     <title>Pawtopia</title>
 </head>
-<body>
+
+<body>    
+  <header>
+    <nav class="navbar navbar-expand-lg">
+      <div class="posicion_logonav container">
+        <a class="navbar-logo" href="./index.html">
+          <img class="nav-logo" src="./assets/logolarge-color.png" alt="Bootstrap">
+        </a>
+      </div>
+      <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="./index.html">INICIO</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./pages/sobre-nosotros.html">NOSOTROS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./pages/nuestros-servicios.html">SERVICIOS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./pages/recomendaciones.html">RECOMENDACIONES</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./pages/reservas.html">RESERVAS</a>
+          </li>
+        </ul>
+      </div>
+      </div>
+    </nav>
+  </header>
     
-    <header>
-        <nav class="navbar navbar-expand-lg navbar-bg">
-            <div class="logo-nav">
-              <a class="navbar-brand" href="./index.html">
-                <img class="logo-home" src="./assets/logolarge-color.png" alt="Bootstrap">
-              </a>
-            </div>
-            <div class="container-fluid">
-              <button class="navbar-toggler margham" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="./index.html">Inicio</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="./pages/sobre-nosotros.html">Sobre Nosotros</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="./pages/nuestros-servicios.html">Nuestros Servicios</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="./pages/recomendaciones.html">Recomendaciones</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="./pages/reservas.html">Reservas</a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </nav>
-    </header>
-    
-    <main>
-        <section id="index-ppal">  
-            <h1 class="titulo-index">¡EL LUGAR IDEAL PARA TU PELUDO!</h1>
-        </section>
+  <main>
+    <section class="index-ppal">
+      <img class="logo-home" src="./assets/logo-white.png" alt=""> 
+      <h1>¡EL LUGAR IDEAL PARA TU PELUDO!</h1>
+      <h2>Hotel - Guardería - Colegio</h2>
+    </section>
 
-        <section id="index-quienes">
-            <div class="container-index-quienes">
-                <div>
-                    <img class="img-home" src="./assets/img/home-quienes.png" alt="">
-                </div>
-                <div class="texto">
-                    <h2>¿QUIÉNES SOMOS?</h2>
-                    <p class="index-p">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni quibusdam architecto eius. Amet voluptatum voluptas accusamus dolores voluptatem animi cum, facere quibusdam optio sit nobis deserunt repellendus distinctio dignissimos adipisci.</p>
-                    <form action="./pages/sobre-nosotros.html">
-                        <button>Conoce más</button>
-                    </form>
-                </div>
-            </div>
-        </section>
-
-        <section id="index-servicios">
-            <div class="container-index-servi">
-                <h2>NUESTROS SERVICIOS</h2>
-                <div class="index-servicios-cartas">
-                    <div class="cartas-servi">
-                        <img class="img-servi-home" src="./assets/img/home-hotel.jpg" alt="">
-                        <h3>HOTEL</h3>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat facere rerum, vero sequi qui necessitatibus sunt commodi odio soluta perferendis.</p>
-                    </div>
-                    <div class="cartas-servi">
-                        <img  class="img-servi-home" src="./assets/img/home-guarderia.jpg" alt="">
-                        <h3>GUARDERÍA</h3>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat facere rerum, vero sequi qui necessitatibus sunt commodi odio soluta perferendis.</p>
-                    </div>
-                    <div class="cartas-servi">
-                        <img class="img-servi-home" src="./assets/img/home-colegio.jpg" alt="">
-                        <h3>COLEGIO</h3>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat facere rerum, vero sequi qui necessitatibus sunt commodi odio soluta perferendis.</p>
-                    </div>
-                </div>
-                <form action="./pages/nuestros-servicios.html">
-                    <button>Conoce más</button>
-                </form>
-            </div>
-        </section>
-
-        <section id="index-recom" >
-            <div class="container-index-recom">
-                <div class="texto">
-                    <h2>TODO SOBRE TU PELUDO</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo distinctio dolores consectetur aperiam! Aliquid, placeat! Dolorem repellendus eos pariatur, aspernatur rem deserunt fugit autem ratione exercitationem quidem laborum praesentium esse?</p>
-                    <form action="./pages/recomendaciones.html">
-                        <button>Revisa nuestras recomendaciones</button>
-                    </form>
-                </div>
-                <div>
-                    <img class="img-home-recom1" src="./assets/img/home-recomendaciones.png" alt="">
-                </div>
-            </div>
-        </section>
-
-        <section id="index-reserv">
-            <div class="container-index-reserv">
-                <h2 class="titulo-reserv">¡RESERVA CON NOSOTROS!</h2>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam laudantium laboriosam, dolores voluptatum, doloremque voluptates,</p>
-                <form action="./pages/reservas.html">
-                    <button>¡Contáctanos!</button>
-                </form>
-            </div>
-        </section>
-
-        <footer>
-
-        </footer>
-    </main>
-
-    <footer class="content-foot">
-        <div class="cont-logo-foot">
-          <img class="logo-foot" src="./assets/logo-color.png" alt="">
+    <section class="index-quienes">
+      <div class="container-index-quienes">
+        <div data-aos="fade-right">
+          <img class="img-home" src="./assets/img/home-quienes.png" alt="">
         </div>
-        <div class="p-foot">
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio qui aut fugiat</p>
+        <div class="texto" data-aos="fade-up"> 
+          <h2>¿QUIÉNES SOMOS?</h2>
+          <p>En Pawtopia, nos especializamos en el cuidado y bienestar de perros y gatos, ofreciendo servicios de hotel, guardería y colegio. Brindamos un ambiente seguro, cómodo y lleno de amor, donde cada mascota recibe atención personalizada, enriquecimiento diario y diversión asegurada. Nuestro equipo, apasionado por los animales, trabaja para que tu compañero peludo se sienta como en casa mientras tú tienes tranquilidad y confianza. ¡Porque su felicidad es nuestra prioridad!</p>
+          <div data-aos="zoom-in">
+            <form action="./pages/sobre-nosotros.html">
+            <button>CONOCE MÁS</button>
+            </form>
+          </div>
         </div>
-        <div class="cont-icon-foot">
-          <a href="https://www.google.com/maps/@15,-2.970703,3z?hl=es&entry=ttu&g_ep=EgoyMDI1MDIxOS4xIKXMDSoJLDEwMjExNDUzSAFQAw%3D%3D">
-          <img class="icon-footer" src="./assets/icons/ic-map.png" alt="">
-          </a>
-          <a href="https://web.whatsapp.com/">
-          <img class="icon-footer" src="./assets/icons/ic-whatsapp.png" alt="">
-          </a>
-          <a href="https://www.instagram.com/">
-          <img class="icon-footer" src="./assets/icons/ic-instagram.png" alt="">
-          </a>
-          <a href="https://web.facebook.com/">
-          <img class="icon-footer" src="./assets/icons/ic-facebook.png" alt="">
-          </a>
-          <a href="https://www.tiktok.com/explore">
-          <img class="icon-footer" src="./assets/icons/ic-tiktok.png" alt="">
-          </a>
+      </div>
+    </section>
+
+    <section class="index-servicios">
+      <div class="container-index-servi">
+        <h2 data-aos="fade-up">NUESTROS SERVICIOS</h2>
+          <div class="index-servicios-cartas">
+            <div class="cartas-servi" data-aos="flip-left">
+              <img class="img-servi-home" src="./assets/img/home-hotel.jpg" alt="">
+              <h3>HOTEL</h3>
+              <p>Un espacio cómodo y seguro para que tu mascota pase la noche, con atención personalizada y mucho cariño.</p>
+            </div>
+            <div class="cartas-servi" data-aos="flip-left">
+              <img  class="img-servi-home" src="./assets/img/home-guarderia.jpg" alt="">
+              <h3>GUARDERÍA</h3>
+              <p>Diversión y socialización durante el día en un ambiente controlado y supervisado.</p>
+            </div>
+            <div class="cartas-servi" data-aos="flip-left">
+              <img class="img-servi-home" src="./assets/img/home-colegio.jpg" alt="">
+              <h3>COLEGIO</h3>
+              <p>Actividades educativas y de estimulación para el desarrollo físico y mental de tu mascota.</p>
+            </div>
+          </div>
+          <div data-aos="zoom-in">
+            <form action="./pages/nuestros-servicios.html">
+              <button>CONOCE MÁS</button>
+            </form>
+          </div>
+      </div>
+    </section>
+
+    <section class="index-recom" >
+      <div class="container-index-recom">
+        <div class="texto" data-aos="fade-up">
+          <h2>TODO SOBRE TU PELUDO</h2>
+          <p>Para garantizar el bienestar de todas las mascotas en nuestras instalaciones, te invitamos a revisar nuestras recomendaciones antes de su ingreso. Es importante que tu peludo esté al día con su desparasitación y vacunas, tenga su alimentación adecuada según sus necesidades, y nos informes sobre cualquier condición especial o enfermedad. También consideramos la edad y raza de cada mascota para brindarle la mejor experiencia posible. Consulta nuestras pautas y prepárate para que tu compañero disfrute al máximo de nuestros servicios.</p>
+          <div data-aos="zoom-in">
+            <form action="./pages/recomendaciones.html">
+              <button>REVISA LAS RECOMENDACIONES</button>
+            </form>
+          </div>
         </div>
-        <div class="copyrgt">
-          <p>Copyright 2025 | Pawtopia</p>
+        <div data-aos="fade-left">
+          <img class="img-home-recom1" src="./assets/img/home-recomendaciones.png" alt="">
         </div>
-      </footer>
+      </div>
+    </section>
+
+    <section class="index-reserv">
+      <div class="container-index-reserv" data-aos="fade-up">
+        <h2>¡RESERVA CON NOSOTROS!</h2>
+        <p>Reserva con nosotros y dale a tu mascota el cuidado que se merece. Ya sea para hotel, guardería o colegio, garantizamos un ambiente seguro, divertido y lleno de amor. 
+        <br>¡Contáctanos y agenda su espacio hoy mismo!</p>
+        <div data-aos="zoom-in">
+          <form action="./pages/reservas.html">
+            <button>¡CONTACTAR!</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="content-foot">
+    <div class="foot-container">
+      <div class="cont-foot">
+        <img class="logo-foot" src="./assets/logo-color.png" alt="">
+      </div>
+      <div class="cont-foot">
+        <p>En Pawtopia, cuidamos con amor y responsabilidad, brindando un espacio seguro y lleno de bienestar.</p>
+      </div>
+      <div class="cont-foot">
+        <a href="https://www.google.com/maps/@15,-2.970703,3z?hl=es&entry=ttu&g_ep=EgoyMDI1MDIxOS4xIKXMDSoJLDEwMjExNDUzSAFQAw%3D%3D">
+        <img class="icon-footer" src="./assets/icons/ic-map.png" alt="">
+        </a>
+        <a href="https://web.whatsapp.com/">
+        <img class="icon-footer" src="./assets/icons/ic-whatsapp.png" alt="">
+        </a>
+        <a href="https://www.instagram.com/">
+        <img class="icon-footer" src="./assets/icons/ic-instagram.png" alt="">
+        </a>
+        <a href="https://web.facebook.com/">
+        <img class="icon-footer" src="./assets/icons/ic-facebook.png" alt="">
+        </a>
+        <a href="https://www.tiktok.com/explore">
+        <img class="icon-footer" src="./assets/icons/ic-tiktok.png" alt="">
+        </a>
+      </div>
+    </div>
+    <div class="copyrgt">
+      <p>Copyright 2025 | Pawtopia</p>
+    </div>
+  </footer>
 
 <!--Bootstrap JS-->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>  
+<!--AOS-->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
 </body>
 </html>

@@ -1,0 +1,11 @@
+.navbar {
+    padding: 20px 40px;
+    width: 100%;
+    background-color: #06d69ed5;
+    font-family: $font-parrafo;
+    font-size: map-get($font-sizes , xs );
+        .nav-logo {
+            @include medidas(220px, auto);
+        }
+}
+

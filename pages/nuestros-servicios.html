@@ -5,139 +5,141 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--Bootstrap-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <!--Fuentes-->
-    <!--Poppins-párrafos-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    <!--Fjalla-títulos-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap" rel="stylesheet">
+    <!--AOS-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!--CSS-->
     <link rel="stylesheet" href="../styles/style.css">
     <title>Pawtopia</title>
 </head>
 <body>
-    <header>
-        <nav class="navbar navbar-expand-lg navbar-bg">
-            <div class="logo-nav">
-              <a class="navbar-brand" href="../index.html">
-                <img class="logo-home" src="../assets/logolarge-color.png" alt="Bootstrap">
-              </a>
-            </div>
-            <div class="container-fluid">
-              <button class="navbar-toggler margham" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                  <li class="nav-item">
-                    <a class="nav-link" href="../index.html">Inicio</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="./sobre-nosotros.html">Sobre Nosotros</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="./nuestros-servicios.html">Nuestros Servicios</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="./recomendaciones.html">Recomendaciones</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="./reservas.html">Reservas</a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </nav>
-    </header>
+  <header>
+    <nav class="navbar navbar-expand-lg">
+      <div class="container">
+        <a class="navbar-logo" href="../index.html">
+          <img class="nav-logo" src="../assets/logolarge-color.png" alt="Bootstrap">
+        </a>
+      </div>
+      <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="../index.html">INICIO</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./sobre-nosotros.html">NOSOTROS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="./nuestros-servicios.html">SERVICIOS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./recomendaciones.html">RECOMENDACIONES</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./reservas.html">RESERVAS</a>
+          </li>
+        </ul>
+      </div>
+      </div>
+    </nav>
+  </header>
 
-    <main>
-        <section id="container-servi-h1">
-            <h1>NUESTROS SERVICIOS</h1>
-        </section>
+  <main class="bg-servi">
+    
+    <section class="servicios-ppal">
+      <h1>NUESTROS SERVICIOS</h1>
+    </section>
 
-        <section id="servicios">
-            <div class="container-servi">
-                <div class="servi-cartas1">
-                    <div>
-                    <img class="img-serv1" src="../assets/img/servicios-hotel.png" alt="">
-                    </div>
-                    <div class="texto">
-                    <h2>HOTEL</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati hic dolorum explicabo perferendis alias voluptate molestias? Fugit similique optio dignissimos! Enim, numquam ab. Vitae esse fuga voluptatum tenetur error quam? Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati hic dolorum explicabo perferendis alias voluptate molestias? Fugit similique optio dignissimos! Enim, numquam ab. Vitae esse fuga voluptatum tenetur error quam? Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati hic dolorum explicabo perferendis alias voluptate molestias? Fugit similique optio dignissimos! Enim, numquam ab. Vitae esse fuga voluptatum tenetur error quam?</p>
-                    </div>
-                </div>
-                <div class="servi-cartas2">
-                    <div class="texto">
-                    <h2>GUARDERÍA</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati hic dolorum explicabo perferendis alias voluptate molestias? Fugit similique optio dignissimos! Enim, numquam ab. Vitae esse fuga voluptatum tenetur error quam? Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati hic dolorum explicabo perferendis alias voluptate molestias? Fugit similique optio dignissimos! Enim, numquam ab. Vitae esse fuga voluptatum tenetur error quam? Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati hic dolorum explicabo perferendis alias voluptate molestias? Fugit similique optio dignissimos! Enim, numquam ab. Vitae esse fuga voluptatum tenetur error quam?</p>
-                    </div>
-                    <div>
-                    <img class="img-serv1" src="../assets/img/servicios-guarderia.png" alt="">
-                    </div>
-                </div>
-                <div class="servi-cartas1">
-                    <div>
-                    <img class="img-serv1" src="../assets/img/servicios-planes.png" alt="">
-                    </div>
-                    <div class="texto">
-                    <h2>PLANES DE DIVERSIÓN</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati hic dolorum explicabo perferendis alias voluptate molestias? Fugit similique optio dignissimos! Enim, numquam ab. Vitae esse fuga voluptatum tenetur error quam? Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati hic dolorum explicabo perferendis alias voluptate molestias? Fugit similique optio dignissimos! Enim, numquam ab. Vitae esse fuga voluptatum tenetur error quam? Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati hic dolorum explicabo perferendis alias voluptate molestias? Fugit similique optio dignissimos! Enim, numquam ab. Vitae esse fuga voluptatum tenetur error quam?</p>
-                    </div>
-                </div>
-                <div class="servi-cartas2">
-                    <div class="texto">
-                    <h2>COLEGIO - ADIESTRAMIENTO</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati hic dolorum explicabo perferendis alias voluptate molestias? Fugit similique optio dignissimos! Enim, numquam ab. Vitae esse fuga voluptatum tenetur error quam? Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati hic dolorum explicabo perferendis alias voluptate molestias? Fugit similique optio dignissimos! Enim, numquam ab. Vitae esse fuga voluptatum tenetur error quam? Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati hic dolorum explicabo perferendis alias voluptate molestias? Fugit similique optio dignissimos! Enim, numquam ab. Vitae esse fuga voluptatum tenetur error quam?</p>
-                    </div>
-                    <div>
-                    <img class="img-serv1" src="../assets/img/servicios-colegio.png" alt="">
-                    </div>
-                </div>
-            </div>
-        </section>
+    <section>
+      <div class="container-servi">
+        <div class="servi-cartas1">
+          <div data-aos="fade-right">
+            <img class="img-serv1" src="../assets/img/servicios-hotel.png" alt="">
+          </div>
+          <div data-aos="fade-up">
+            <h2>HOTEL</h2>
+            <p> Nuestro servicio de hotel es la opción ideal para quienes necesitan dejar a su mascota por una o varias noches en un ambiente seguro, cómodo y supervisado. Contamos con instalaciones separadas para perros y gatos, diseñadas para garantizar su bienestar y tranquilidad. Cada huésped recibe atención personalizada, alimentación adecuada y espacios adecuados para su descanso. Además, nos aseguramos de que disfruten de momentos de recreación y cariño, haciendo que su estadía sea placentera y libre de estrés.
+            </p>
+          </div>
+        </div>
+        <div class="servi-cartas2">
+          <div data-aos="fade-left">
+            <img class="img-serv2" src="../assets/img/servicios-guarderia.png" alt="">
+          </div>
+          <div data-aos="fade-up">
+            <h2>GUARDERÍA</h2>
+            <p>Ofrecemos un servicio de guardería pensado para aquellos que desean que su mascota pase el día en un entorno seguro, estimulante y lleno de compañía. Contamos con áreas independientes para perros y gatos, adaptadas a sus necesidades específicas. Durante el día, los perros disfrutan de juegos dirigidos, caminatas y socialización supervisada, mientras que los gatos tienen un espacio tranquilo con actividades de enriquecimiento. Nos aseguramos de brindarles cuidados personalizados y un ambiente libre de estrés, permitiendo que regresen a casa felices y relajados.</p>
+          </div>
+        </div>
+        <div class="servi-cartas1">
+          <div data-aos="fade-right">
+            <img class="img-serv1" src="../assets/img/servicios-planes.png" alt="">
+          </div>
+          <div data-aos="fade-up">
+            <h2>PLANES DE DIVERSIÓN</h2>
+            <p>Nuestras pasadías están diseñadas para que perros y gatos disfruten de un día lleno de actividad, exploración y entretenimiento en un entorno seguro y controlado. Cada mascota, en su espacio adecuado, participa en juegos diseñados para estimular su mente y cuerpo, disfrutando de caminatas, juguetes interactivos y momentos de relajación. Nos enfocamos en brindar una experiencia equilibrada, combinando ejercicio, socialización y descanso, siempre con la supervisión y el cuidado que nos caracteriza.</p>
+          </div>
+        </div>
+        <div class="servi-cartas2 servi-final">
+          <div data-aos="fade-left">
+            <img class="img-serv2" src="../assets/img/servicios-colegio.png" alt="">
+          </div>
+          <div data-aos="fade-up">
+            <h2>COLEGIO - ADIESTRAMIENTO</h2>
+            <p>Nuestro programa de colegio está enfocado en el adiestramiento y la educación, ayudando a perros y gatos a desarrollar habilidades y mejorar su comportamiento de manera positiva. Adaptamos las sesiones a cada mascota, asegurando un proceso de aprendizaje efectivo y libre de estrés. En el caso de los perros, trabajamos en obediencia, socialización y refuerzo de hábitos, mientras que para los gatos nos enfocamos en enriquecimiento ambiental y conductas adecuadas en el hogar. Todo se realiza en un espacio separado para cada especie y bajo la guía de nuestro equipo experto, con el compromiso de garantizar resultados positivos y una mejor convivencia.</p>
+          </div>
+        </div>
+      </div>
+    </section>
 
-        <section id="servi-boton">
-            <div>
-                <form action="../pages/reservas.html">
-                    <button>¡Contáctanos y haz una reserva!</button>
-                </form>
-            </div>
-        </section>
-    </main>
+    <section class="servi-boton">
+      <div data-aos="zoom-in">
+        <form action="../pages/reservas.html">
+          <button>¡CONTÁCTANOS Y HAZ UNA RESERVA!</button>
+        </form>
+      </div>
+    </section>   
+  </main>
 
-    <footer class="content-foot">
-        <div class="cont-logo-foot">
-          <img class="logo-foot" src="../assets/logo-color.png" alt="">
-        </div>
-        <div class="p-foot">
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio qui aut fugiat</p>
-        </div>
-        <div class="cont-icon-foot">
-          <a href="https://www.google.com/maps/@15,-2.970703,3z?hl=es&entry=ttu&g_ep=EgoyMDI1MDIxOS4xIKXMDSoJLDEwMjExNDUzSAFQAw%3D%3D">
-          <img class="icon-footer" src="../assets/icons/ic-map.png" alt="">
-          </a>
-          <a href="https://web.whatsapp.com/">
-          <img class="icon-footer" src="../assets/icons/ic-whatsapp.png" alt="">
-          </a>
-          <a href="https://www.instagram.com/">
-          <img class="icon-footer" src="../assets/icons/ic-instagram.png" alt="">
-          </a>
-          <a href="https://web.facebook.com/">
-          <img class="icon-footer" src="../assets/icons/ic-facebook.png" alt="">
-          </a>
-          <a href="https://www.tiktok.com/explore">
-          <img class="icon-footer" src="../assets/icons/ic-tiktok.png" alt="">
-          </a>
-        </div>
-        <div class="copyrgt">
-          <p>Copyright 2025 | Pawtopia</p>
-        </div>
-      </footer>
+  <footer class="content-foot">
+    <div class="foot-container">
+      <div class="cont-foot">
+        <img class="logo-foot" src="../assets/logo-color.png" alt="">
+      </div>
+      <div class="cont-foot">
+        <p>En Pawtopia, cuidamos con amor y responsabilidad, brindando un espacio seguro y lleno de bienestar.</p>
+      </div>
+      <div class="cont-foot">
+        <a href="https://www.google.com/maps/@15,-2.970703,3z?hl=es&entry=ttu&g_ep=EgoyMDI1MDIxOS4xIKXMDSoJLDEwMjExNDUzSAFQAw%3D%3D">
+        <img class="icon-footer" src="../assets/icons/ic-map.png" alt="">
+        </a>
+        <a href="https://web.whatsapp.com/">
+        <img class="icon-footer" src="../assets/icons/ic-whatsapp.png" alt="">
+        </a>
+        <a href="https://www.instagram.com/">
+        <img class="icon-footer" src="../assets/icons/ic-instagram.png" alt="">
+        </a>
+        <a href="https://web.facebook.com/">
+        <img class="icon-footer" src="../assets/icons/ic-facebook.png" alt="">
+        </a>
+        <a href="https://www.tiktok.com/explore">
+        <img class="icon-footer" src="../assets/icons/ic-tiktok.png" alt="">
+        </a>
+      </div>
+    </div>
+    <div class="copyrgt">
+      <p>Copyright 2025 | Pawtopia</p>
+    </div>
+  </footer>
 
 <!--Bootstrap JS-->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>  
+<!--AOS-->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
 </body>
 </html>

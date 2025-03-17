@@ -1,0 +1,36 @@
+.recomendaciones-ppal {
+    @include flex(column, center, center);
+    height: 90vh;
+    text-align: center;
+    background-image: url(../assets/img/recomendaciones.png);
+    @include background(no-repeat, cover, bottom, fixed);
+        p {
+            color: white;
+            max-width: 800px;
+        }
+}
+.container-recom {
+    @include flex(row, space-evenly, center);
+    flex-wrap: wrap;
+    margin: 80px 60px;
+    h2 {
+        text-align: center;
+        font-size: 3em;
+    }
+    p {
+        text-align: center;
+        font-size: 0.9em;
+    }
+}
+.cont-recom {
+    @include flex(column, space-evenly, center);
+    @include medidas(600px, 830px);
+    margin: 20px 0;
+    padding: 40px 60px;
+    background-image: url(../assets/img/bg-cards2.png);
+    @include background(no-repeat, cover, center, none);
+    border-radius: 40px;
+        .recom-img {
+            @include medidas(350px, auto);
+        }
+}

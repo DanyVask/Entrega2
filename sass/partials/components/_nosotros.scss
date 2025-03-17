@@ -1,0 +1,55 @@
+.nosotros-ppal {
+    @include flex(column, center, center);
+    height: 90vh;
+    text-align: center;
+    background-image: url(../assets/img/nosotros.png);
+    @include background(no-repeat, cover, bottom, fixed);
+        p {
+            color: white;
+            max-width: 800px;
+        }
+}
+.nosotros .container-nosot {
+    margin: 100px 50px 0 50px;
+    @include flex(column, center, center);
+        .text-nosotros {
+            max-width: 900px;
+            text-align: center;
+            padding-bottom: 40px;
+        }
+        .nosotros-cartas {
+            padding: 20px;
+            @include flex(row, space-around, center);
+            text-align: center;
+                .cartas-nosot {
+                    max-width: 480px;
+                    padding: 20px 40px;
+                }
+                .icon-nosotros {
+                    @include medidas(120px, auto);
+                    padding-bottom: 30px;
+                    &:hover {
+                        background-image: url(../assets/icons/ic-quienes1-o.png);
+                    }
+                }
+        }
+}
+.container-nosotimg {
+    margin: 30px 0;
+    @include flex(column, center, center);
+    text-align: center;
+        h2{
+            padding: 40px;
+        }
+        .img-nosotros {
+            @include medidas(1040px, auto);
+            margin: 20px 0 60px 0;
+            display: block;
+            margin-left: auto;
+            margin-right: auto; 
+            align-items: center;
+        }
+        .nos-button {
+            margin-bottom: 40px;
+        }
+}

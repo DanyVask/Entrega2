@@ -1,0 +1,31 @@
+.content-foot {
+    background-color: #f3c886;
+        .foot-container {
+            @include flex(row, space-evenly, center);
+            padding: 20px;
+                .cont-foot {
+                    .logo-foot {
+                        @include medidas(100px, auto);
+                    }    
+                }
+                p {
+                    max-width: 400px;
+                    font-size: map-get($font-sizes , xxs );
+                }
+                .cont-foot {
+                    @include flex(row, space-between, center);
+                    gap: 40px;
+                        .icon-footer {
+                            @include medidas(50px, auto);
+                        }
+                }
+        }
+        .copyrgt {
+            background-color: map-get($colors , amarillo );
+            font-size: 0.7em;
+            padding: 10px;
+            text-align: center;
+        }
+        
+        
+}

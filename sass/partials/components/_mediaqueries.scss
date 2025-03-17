@@ -1,0 +1,304 @@
+@media (max-width: 720px) {
+    body {
+        margin: 0 16px;
+    }
+    
+    .posicion_logonav {
+        position: relative;
+        display: initial;
+    }
+    .index-ppal {
+        height: 90vh;
+        @include flex(column, center, center);
+        @include background(no-repeat, cover, center, center);
+        text-align: center;
+            .logo-home {
+                @include medidas(150px, auto);
+                padding-bottom: 20px;
+            }
+            h1 {
+                font-size: map-get($font-sizes , l );
+            }
+            h2 {
+                font-size: map-get($font-sizes , s );
+            }
+    }
+    .index-quienes .container-index-quienes {
+        margin: 40px 16px;
+        @include flex(column, center, center);
+            .img-home {
+                @include medidas(350px, auto);
+            }
+            .texto {
+                text-align: center;
+            }
+            h2 {
+                padding-top: 30px;
+                font-size: 2.8em;
+            }
+            p {
+                font-size: map-get($font-sizes , xxs );
+            }
+            button {
+                margin-top: 20px;
+            }
+    }
+    .index-servicios {
+        height: 206vh;
+        .index-servicios-cartas {
+            margin: 0 16px;
+            @include flex(column, center, center);
+            }
+            .cartas-servi { 
+                padding: 30px 0;
+            }
+            h2 {
+                font-size: 2.8em;
+            }
+            p {
+                font-size: map-get($font-sizes , xxs );
+            }
+            button {
+             margin-top: 20px;
+            }
+            
+    }
+    .index-recom .container-index-recom {
+        margin: 40px 16px;
+        @include flex(column, center, center);
+            .img-home-recom1 {
+                @include medidas(350px, auto);
+            }
+            h2 {
+                text-align: center;
+                font-size: 2.8em;
+            }
+            p {
+                padding-top: 20px;
+                text-align: center;
+                font-size: map-get($font-sizes , xxs );
+            }
+            button {
+                text-align: center;
+                margin: 20px 0;
+               }
+    }
+    .index-reserv {
+        height: 100vh;
+        text-align: center;
+        @include flex(column, center, center);
+        .container-index-reserv {
+                margin: 0 20px;
+            }
+            h2 {
+                color: map-get($colors , amarillo );
+            }
+            p {
+                color: #FFFCF9;
+                padding: 0;
+            }
+    }
+    
+    .nosotros-ppal {
+        height: 90vh;
+        @include flex(column, center, center);
+        @include background(no-repeat, cover, center, center);
+        text-align: center;
+            h1 {
+                font-size: map-get($font-sizes , xl );
+            }
+            p {
+                font-size: map-get($font-sizes , xs );
+                padding: 0 30px;
+            }
+    }
+    .nosotros .container-nosot {
+        margin: 10px;
+        @include flex(column, center, center);
+            .text-nosotros {
+                text-align: center;
+                margin-top: 40px;
+                    h2 {
+                        font-size: 2.8em;
+                    }
+                    p {
+                        font-size: 1.1em;
+                        padding-top: 10px;
+                    }
+            }
+            .nosotros-cartas {
+                @include flex(column, center, center);
+            }
+    }
+    .container-nosotimg {
+        h2 {
+            font-size: 2.8em;
+        }
+        .img-nosotros {
+            @include medidas(450px, auto);
+        }
+    }
+    
+    .servicios-ppal {
+        height: 70vh;
+        @include background(no-repeat, cover, center, fixed);
+            h1 {
+                font-size: map-get($font-sizes , xl );
+            }
+    }
+    .container-servi {
+        margin: 0;
+        padding: 0;
+    }
+    .servi-cartas1 {
+        margin: 0;
+        padding: 0;
+        @include flex(column, center, center);
+        flex-wrap: wrap;
+        text-align: center;
+            .img-serv1 {
+                @include medidas(450px, auto);
+                padding: 0;
+            }
+            h2 {
+                background-color: #FFD166;
+                max-width: 300px;
+                padding: 10px 25px;
+                border-radius: 15px;
+                margin-top: -60px;
+                font-size: 2.6em;
+            }
+            p {
+                font-size: 0.9em;
+                padding: 0 16px;
+            }
+    }
+    .servi-cartas2 {
+        margin: 0;
+        padding: 0;
+        @include flex(column, center, center);
+        flex-wrap: wrap;
+        text-align: center;
+            .img-serv2 {
+                @include medidas(450px, auto);
+                padding: 0;
+            }
+            h2 {
+                background-color: #FFD166;
+                max-width: 300px;
+                padding: 10px 25px;
+                border-radius: 15px;
+                margin-top: -60px;
+                font-size: 2.6em;
+            }
+            p {
+                font-size: 0.9em;
+                padding: 0 16px;
+            }
+    }
+    .servi-boton {
+        margin-top: 20px;
+    }
+
+    .recomendaciones-ppal {
+        height: 90vh;
+        @include flex(column, center, center);
+        @include background(no-repeat, cover, center, center);
+        text-align: center;
+            h1 {
+                font-size: map-get($font-sizes , xl );
+            }
+            p {
+                font-size: map-get($font-sizes , xxs );
+                margin: 0;
+                padding: 0 30px;
+            }
+    }
+    .container-recom {
+        margin: 0;
+        padding: 0;
+    }
+    .cont-recom {
+        @include flex(row, center, center);
+        flex-wrap: wrap;
+        @include medidas(580px, 880px);
+        margin: 30px 0;
+        padding: 16px 0;
+            .recom-img {
+                @include medidas(300px, auto);
+                padding-top: 15px;
+            }
+            h2 {
+                padding-top: 20px;
+                font-size: 2.4em;
+            }
+            p {
+                font-size: 1em;
+                padding: 7px 30px;
+            }
+    }
+    
+    .reservas-ppal {
+        height: 80vh;
+        @include flex(column, center, center);
+        @include background(no-repeat, cover, left, center);
+        text-align: center;
+            h1 {
+                font-size: map-get($font-sizes , xl );
+            }
+    }
+    .form-res {
+        margin: 30px 16px;
+        @include flex(column, center, center);
+            img {
+                @include medidas(350px, auto);
+                margin-bottom: 20px;
+            }
+    }
+    .contacto {
+        height: 118vh;
+            .container-conact {
+                margin: 20px 16px;
+                text-align: center;
+                @include flex(column, center, center);
+                    .container-titulo {
+                        margin: 20px 0;
+                    }
+                    .responsive-reserv {
+                        display: grid;
+                        grid-template-columns: 2(80px 220px);
+                        grid-template-areas:
+                        "ic-contact container-contacto";
+                            .ic-contact {
+                                grid-area: ic-contact;
+                                @include flex(column, space-evenly, center);
+                                text-align: left;
+                                margin-left: 15px;
+                            }
+                    }
+            }
+            .container-contacto {
+                grid-area: contact-info;
+                @include flex(column, space-evenly, left);
+                text-align: left;
+                    p {
+                        font-size: 0.9em;
+                    }
+            }
+    }
+    .gmaps {
+        display: flex;
+        align-items: center;
+            .map-medida {
+                 @include medidas(420px, 300px);
+            }
+    }
+    
+    .content-foot .foot-container {
+        @include flex(column, center, center);
+            p {
+                text-align: center;
+                padding: 15px 0;
+            }
+    }
+}

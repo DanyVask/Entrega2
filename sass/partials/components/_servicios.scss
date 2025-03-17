@@ -1,0 +1,40 @@
+.servicios-ppal {
+    @include flex(column, center, center);
+    height: 70vh;
+    text-align: center;
+    background-image: url(../assets/img/servicios.png);
+    @include background(no-repeat, cover, center, fixed);
+}
+.container-servi {
+    padding: 40px;
+    margin: 40px;
+        .servi-cartas1 {
+            @include flex(row, center, center);
+            margin: 60px 0;
+                p h2 {
+                    padding-left: 30px;
+                }
+        }
+        .img-serv1 {
+            @include medidas(620px, auto);
+            padding-right: 30px;
+        }
+        .servi-cartas2 {
+            @include flex(row-reverse, center, center);
+            margin: 60px 0;
+                p h2 {
+                    padding-right: 30px;
+                }
+        }
+        .img-serv2 {
+            @include medidas(620px, auto);
+            padding-left: 30px;
+        }
+        .servi-final {
+            margin-bottom: 0;
+        }
+}
+.servi-boton {
+    text-align: center;
+    margin-bottom: 100px;
+}

@@ -1,0 +1,18 @@
+@mixin flex ($direction, $justify, $align) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align;
+}
+
+@mixin background ($repeat, $size, $position, $attachment) {
+    background-repeat: $repeat;
+    background-size: $size;
+    background-position: $position;
+    background-attachment: $attachment;
+}
+
+@mixin medidas ($ancho, $alto) {
+    width: $ancho;
+    height: $alto;
+}

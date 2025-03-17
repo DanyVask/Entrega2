@@ -1,0 +1,93 @@
+.index-ppal {
+    padding: 60px;
+    height: 100vh;
+    @include flex(column, flex-end, left);
+    background-image: url(../assets/img/home.png);
+    @include background(no-repeat, cover, center, fixed);
+        .logo-home {
+            @include medidas(200px, auto);
+            padding-bottom: 20px;
+        }
+        h2 {
+            color: map-get($colors , naranja );
+        } 
+}
+.index-quienes .container-index-quienes {
+    margin: 80px;
+    @include flex(row, center, center);
+        .img-home {
+            @include medidas(500px, auto);
+            padding-right: 40px;
+        }
+        .texto {
+            text-align: initial;
+            padding: 0 40px;
+            max-width: 650px;
+        }
+        h2 {
+            padding-bottom: 10px;
+        }
+}
+.index-servicios {
+    background-image: url(../assets/img/bg-amarillo.png);
+    height: 100vh;
+    @include background(no-repeat, cover, center, none);
+    text-align: center;
+        .container-index-servi {
+            text-align: center;
+            padding: 40px 30px;
+                button form {
+                    padding: 0 20px;
+                }
+        }
+        .index-servicios-cartas {
+            margin: 0 20px;
+            @include flex(row, space-evenly, center);
+            padding-top: 15px;
+            padding-bottom: 15px;
+                .img-servi-home {
+                    @include medidas(300px, auto);
+                    border-radius: 20px;
+                }
+                .cartas-servi {
+                    background-color: #ffffff3b;
+                    border-radius: 20px;
+                    margin: 0 50px;
+                    padding: 30px;
+                        h3 {
+                            padding-top: 20px;
+                        }
+                }
+            }
+}
+.index-recom .container-index-recom {
+    margin: 80px;
+    @include flex(row, center, center);
+        .img-home-recom1 {
+            @include medidas(550px, auto);
+            padding-left: 40px;
+        }
+        .texto {
+            text-align: initial;
+            padding: 0 40px;
+            max-width: 650px;
+        }
+        h2 {
+            padding-bottom: 10px;
+        }
+}
+.index-reserv {
+    background-image: url(../assets/img/home-reserva.png);
+    height: 100vh;
+    @include background(no-repeat, cover, center, none);
+    @include flex(column, space-between, flex-end);
+        .container-index-reserv {
+            margin-top: 250px;
+            margin-right: 50px;
+            max-width: 680px;
+                h2 {
+                    margin-bottom: 20px;
+                }
+                
+        }
+}

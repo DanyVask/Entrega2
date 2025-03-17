@@ -1,0 +1,19 @@
+//BASE
+@import 'partials/base/reset';
+@import 'partials/base/tipografia';
+
+//COMPONENTS
+@import 'partials/utilities/maps';
+@import 'partials/utilities/variables';
+@import 'partials/utilities/mixins';
+
+//UTILITIES
+@import 'partials/components/navbar';
+@import 'partials/components/botones';
+@import 'partials/components/home';
+@import 'partials/components/nosotros';
+@import 'partials/components/servicios';
+@import 'partials/components/recomendaciones';
+@import 'partials/components/reservas';
+@import 'partials/components/footer';
+@import 'partials/components/mediaqueries';

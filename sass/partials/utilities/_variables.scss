@@ -1,0 +1,26 @@
+$font-titulo: "Londrina Solid", sans-serif;
+$font-parrafo: "Poppins", sans-serif;
+
+body {
+    color: map-get($colors , grisbg );
+}
+h1 {
+    color: map-get($colors , amarillo );
+    font-family: $font-titulo;
+    font-size: map-get($font-sizes , xxl );
+}
+h2 {
+    color: map-get($colors , azul );
+    font-family: $font-titulo;
+    font-size: map-get($font-sizes , xl );
+}
+h3 {
+    color: map-get($colors , rosa );
+    font-family: $font-titulo;
+    font-size: map-get($font-sizes , l );
+}
+p {
+    color: map-get($colors , negrop );
+    font-family: $font-parrafo;
+    font-size: map-get($font-sizes , xs );
+}
