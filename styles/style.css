@@ -512,7 +512,7 @@ button:hover {
 
 @media (max-width: 720px) {
   body {
-    margin: 0 16px;
+    margin: 0;
   }
   .collapse {
     display: flex;
