@@ -35,7 +35,7 @@ p {
 
 .navbar {
   width: 100%;
-  padding: 20px 40px;
+  padding: 20px 16px;
   background-color: rgba(6, 214, 158, 0.8352941176);
   font-family: "Poppins", sans-serif;
   font-size: 1.2em;
@@ -474,6 +474,10 @@ button:hover {
   height: 572px;
 }
 
+footer {
+  width: 100%;
+}
+
 .content-foot {
   background-color: #f3c886;
 }
@@ -512,7 +516,7 @@ button:hover {
 
 @media (max-width: 720px) {
   body {
-    margin: 0;
+    margin: 0 16px;
   }
   nav .navbar .navbar-expand-lg {
     width: 100%;
@@ -550,19 +554,22 @@ button:hover {
     font-size: 1.5em;
   }
   .index-quienes .container-index-quienes {
+    margin: 40px 0;
+    padding: 0 20px;
     width: 100%;
-    margin: 40px 16px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
   }
   .index-quienes .container-index-quienes .img-home {
-    width: 80%;
+    width: 300px;
     height: auto;
+    padding: 0;
   }
   .index-quienes .container-index-quienes .texto {
     text-align: center;
+    padding: 0 20px;
   }
   .index-quienes .container-index-quienes h2 {
     padding-top: 30px;
@@ -603,23 +610,30 @@ button:hover {
     margin-top: 20px;
   }
   .index-recom .container-index-recom {
+    margin: 40px 0;
+    padding: 0 20px;
     width: 100%;
-    margin: 40px 16px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
   }
   .index-recom .container-index-recom .img-home-recom1 {
-    width: 85%;
+    width: 280px;
     height: auto;
+    padding-left: 0;
+    margin: 20px 0;
   }
-  .index-recom .container-index-recom h2 {
+  .index-recom .container-index-recom .texto {
+    text-align: center;
+    padding: 0;
+  }
+  .index-recom .container-index-recom .texto h2 {
     text-align: center;
     font-size: 2.8em;
   }
-  .index-recom .container-index-recom p {
-    padding-top: 20px;
+  .index-recom .container-index-recom .texto p {
+    padding: 20px 8px 0 8px;
     text-align: center;
     font-size: 0.9em;
   }
@@ -648,6 +662,7 @@ button:hover {
   }
   .nosotros-ppal {
     height: 90vh;
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -693,11 +708,12 @@ button:hover {
     font-size: 2.8em;
   }
   .container-nosotimg .img-nosotros {
-    width: 450px;
+    width: 100%;
     height: auto;
   }
   .servicios-ppal {
     height: 70vh;
+    width: 100%;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -721,7 +737,7 @@ button:hover {
     text-align: center;
   }
   .servi-cartas1 .img-serv1 {
-    width: 450px;
+    width: 100%;
     height: auto;
     padding: 0;
   }
@@ -748,7 +764,7 @@ button:hover {
     text-align: center;
   }
   .servi-cartas2 .img-serv2 {
-    width: 450px;
+    width: 100%;
     height: auto;
     padding: 0;
   }
@@ -769,6 +785,7 @@ button:hover {
   }
   .recomendaciones-ppal {
     height: 90vh;
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -780,7 +797,7 @@ button:hover {
     text-align: center;
   }
   .recomendaciones-ppal h1 {
-    font-size: 3.5em;
+    font-size: 45px;
   }
   .recomendaciones-ppal p {
     font-size: 0.9em;
@@ -790,15 +807,18 @@ button:hover {
   .container-recom {
     margin: 0;
     padding: 0;
+    width: 100%;
   }
   .cont-recom {
+    width: 100%;
+    height: 100%;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    width: 580px;
-    height: 880px;
+    width: 100%;
+    height: 100%;
     margin: 30px 0;
     padding: 16px 0;
   }
@@ -816,6 +836,7 @@ button:hover {
     padding: 7px 30px;
   }
   .reservas-ppal {
+    width: 100%;
     height: 80vh;
     display: flex;
     flex-direction: column;
@@ -843,7 +864,8 @@ button:hover {
     margin-bottom: 20px;
   }
   .contacto {
-    height: 118vh;
+    width: 100%;
+    height: 100%;
   }
   .contacto .container-conact {
     margin: 20px 16px;
@@ -855,6 +877,9 @@ button:hover {
   }
   .contacto .container-conact .container-titulo {
     margin: 20px 0;
+  }
+  .contacto .container-conact .container-titulo h3 {
+    font-size: 30px;
   }
   .contacto .container-conact .responsive-reserv {
     display: grid;
@@ -884,13 +909,16 @@ button:hover {
   .gmaps {
     display: flex;
     align-items: center;
+    padding-bottom: 30px;
   }
   .gmaps .map-medida {
-    width: 420px;
+    width: 100%;
     height: 300px;
   }
-  .content-foot .foot-container {
+  footer {
     width: 100%;
+  }
+  .content-foot .foot-container {
     display: flex;
     flex-direction: column;
     justify-content: center;

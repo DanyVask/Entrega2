@@ -1,6 +1,6 @@
 @media (max-width: 720px) {
     body {
-        margin: 0;
+        margin: 0 16px;
     }
     
     //NAV
@@ -31,14 +31,17 @@
             }
     }
     .index-quienes .container-index-quienes {
+        margin: 40px 0;
+        padding: 0 20px;
         width: 100%;
-        margin: 40px 16px;
         @include flex(column, center, center);
             .img-home {
-                @include medidas(80%, auto);
+                @include medidas(300px, auto);
+                padding: 0;
             }
             .texto {
                 text-align: center;
+                padding: 0 20px;
             }
             h2 {
                 padding-top: 30px;
@@ -77,20 +80,27 @@
             
     }
     .index-recom .container-index-recom {
+        margin: 40px 0;
+        padding: 0 20px;
         width: 100%;
-        margin: 40px 16px;
         @include flex(column, center, center);
             .img-home-recom1 {
-                @include medidas(85%, auto);
+                @include medidas(280px, auto);
+                padding-left: 0;
+                margin: 20px 0;
             }
-            h2 {
+            .texto {
                 text-align: center;
-                font-size: 2.8em;
-            }
-            p {
-                padding-top: 20px;
-                text-align: center;
-                font-size: map-get($font-sizes , xxs );
+                padding: 0;
+                h2 {
+                    text-align: center;
+                    font-size: 2.8em;
+                }
+                p {
+                    padding: 20px 8px 0 8px;
+                    text-align: center;
+                    font-size: map-get($font-sizes , xxs );
+                }
             }
             button {
                 text-align: center;
@@ -117,6 +127,7 @@
     //NOSOTROS
     .nosotros-ppal {
         height: 90vh;
+        width: 100%;
         @include flex(column, center, center);
         @include background(no-repeat, cover, center, center);
         text-align: center;
@@ -151,13 +162,14 @@
             font-size: 2.8em;
         }
         .img-nosotros {
-            @include medidas(450px, auto);
+            @include medidas(100%, auto);
         }
     }
     
     //SERVICIOS
     .servicios-ppal {
         height: 70vh;
+        width: 100%;
         @include background(no-repeat, cover, center, fixed);
             h1 {
                 font-size: map-get($font-sizes , xl );
@@ -174,7 +186,7 @@
         flex-wrap: wrap;
         text-align: center;
             .img-serv1 {
-                @include medidas(450px, auto);
+                @include medidas(100%, auto);
                 padding: 0;
             }
             h2 {
@@ -197,7 +209,7 @@
         flex-wrap: wrap;
         text-align: center;
             .img-serv2 {
-                @include medidas(450px, auto);
+                @include medidas(100%, auto);
                 padding: 0;
             }
             h2 {
@@ -220,11 +232,12 @@
     //RECOMENDACIONES
     .recomendaciones-ppal {
         height: 90vh;
+        width: 100%;
         @include flex(column, center, center);
         @include background(no-repeat, cover, center, center);
         text-align: center;
             h1 {
-                font-size: map-get($font-sizes , xl );
+                font-size: 45px;
             }
             p {
                 font-size: map-get($font-sizes , xxs );
@@ -235,11 +248,14 @@
     .container-recom {
         margin: 0;
         padding: 0;
+        width: 100%;
     }
     .cont-recom {
+        width: 100%;
+        height: 100%;
         @include flex(row, center, center);
         flex-wrap: wrap;
-        @include medidas(580px, 880px);
+        @include medidas(100%, 100%);
         margin: 30px 0;
         padding: 16px 0;
             .recom-img {
@@ -258,6 +274,7 @@
     
     //RESERVAS
     .reservas-ppal {
+        width: 100%;
         height: 80vh;
         @include flex(column, center, center);
         @include background(no-repeat, cover, left, center);
@@ -275,13 +292,17 @@
             }
     }
     .contacto {
-        height: 118vh;
+        width: 100%;
+        height: 100%;
             .container-conact {
                 margin: 20px 16px;
                 text-align: center;
                 @include flex(column, center, center);
                     .container-titulo {
                         margin: 20px 0;
+                            h3 {
+                                font-size: 30px;
+                            }
                     }
                     .responsive-reserv {
                         display: grid;
@@ -308,14 +329,17 @@
     .gmaps {
         display: flex;
         align-items: center;
+        padding-bottom: 30px;
             .map-medida {
-                 @include medidas(420px, 300px);
+                 @include medidas(100%, 300px);
             }
     }
     
     //FOOTER
-    .content-foot .foot-container {
+    footer {
         width: 100%;
+    }
+    .content-foot .foot-container {
         @include flex(column, center, center);
             p {
                 text-align: center;
