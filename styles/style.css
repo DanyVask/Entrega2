@@ -34,8 +34,8 @@ p {
 }
 
 .navbar {
-  padding: 20px 40px;
   width: 100%;
+  padding: 20px 40px;
   background-color: rgba(6, 214, 158, 0.8352941176);
   font-family: "Poppins", sans-serif;
   font-size: 1.2em;
@@ -514,6 +514,9 @@ button:hover {
   body {
     margin: 0;
   }
+  nav .navbar .navbar-expand-lg {
+    width: 100%;
+  }
   .collapse {
     display: flex;
     flex-direction: row;
@@ -523,6 +526,7 @@ button:hover {
     padding-top: 20px;
   }
   .index-ppal {
+    width: 100%;
     height: 90vh;
     display: flex;
     flex-direction: column;
@@ -546,6 +550,7 @@ button:hover {
     font-size: 1.5em;
   }
   .index-quienes .container-index-quienes {
+    width: 100%;
     margin: 40px 16px;
     display: flex;
     flex-direction: column;
@@ -553,7 +558,7 @@ button:hover {
     align-items: center;
   }
   .index-quienes .container-index-quienes .img-home {
-    width: 350px;
+    width: 80%;
     height: auto;
   }
   .index-quienes .container-index-quienes .texto {
@@ -570,7 +575,8 @@ button:hover {
     margin-top: 20px;
   }
   .index-servicios {
-    height: 206vh;
+    width: 100%;
+    height: 100%;
   }
   .index-servicios .index-servicios-cartas {
     margin: 0 16px;
@@ -580,18 +586,24 @@ button:hover {
     align-items: center;
   }
   .index-servicios .cartas-servi {
+    width: 98%;
     padding: 30px 0;
   }
-  .index-servicios h2 {
+  .index-servicios .cartas-servi .img-servi-home {
+    width: 100%;
+    height: auto;
+  }
+  .index-servicios .cartas-servi h2 {
     font-size: 2.8em;
   }
-  .index-servicios p {
+  .index-servicios .cartas-servi p {
     font-size: 0.9em;
   }
   .index-servicios button {
     margin-top: 20px;
   }
   .index-recom .container-index-recom {
+    width: 100%;
     margin: 40px 16px;
     display: flex;
     flex-direction: column;
@@ -599,7 +611,7 @@ button:hover {
     align-items: center;
   }
   .index-recom .container-index-recom .img-home-recom1 {
-    width: 350px;
+    width: 85%;
     height: auto;
   }
   .index-recom .container-index-recom h2 {
@@ -617,6 +629,7 @@ button:hover {
   }
   .index-reserv {
     height: 100vh;
+    width: 100%;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -877,6 +890,7 @@ button:hover {
     height: 300px;
   }
   .content-foot .foot-container {
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -885,6 +899,9 @@ button:hover {
   .content-foot .foot-container p {
     text-align: center;
     padding: 15px 0;
+  }
+  .content-foot .foot-container .cont-foot {
+    gap: 20px;
   }
 }
 
