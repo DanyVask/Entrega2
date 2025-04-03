@@ -4,7 +4,7 @@
     @include flex(column, flex-end, left);
     background-image: url(../assets/img/home.png);
     @include background(no-repeat, cover, center, fixed);
-        .logo-home {
+        img {
             @include medidas(200px, auto);
             padding-bottom: 20px;
         }
@@ -15,7 +15,7 @@
 .index-quienes .container-index-quienes {
     margin: 80px;
     @include flex(row, center, center);
-        .img-home {
+        img {
             @include medidas(500px, auto);
             padding-right: 40px;
         }
@@ -45,7 +45,7 @@
             @include flex(row, space-evenly, center);
             padding-top: 15px;
             padding-bottom: 15px;
-                .img-servi-home {
+                img {
                     @include medidas(300px, auto);
                     border-radius: 20px;
                 }
@@ -63,7 +63,7 @@
 .index-recom .container-index-recom {
     margin: 80px;
     @include flex(row, center, center);
-        .img-home-recom1 {
+        img {
             @include medidas(550px, auto);
             padding-left: 40px;
         }

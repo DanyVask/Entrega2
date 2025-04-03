@@ -1,6 +1,7 @@
 @media (max-width: 720px) {
     body {
         margin: 0;
+        overflow-x: hidden;
     }
     
     //NAV
@@ -338,15 +339,15 @@
     //FOOTER
     footer {
         width: 100%;
-    }
-    .content-foot .foot-container {
-        @include flex(column, center, center);
-            p {
-                text-align: center;
-                padding: 15px 0;
-            }
-            .cont-foot {
-                gap: 20px;
+            .foot-container {
+                @include flex(column, center, center);
+                    p {
+                        text-align: center;
+                        padding: 15px 0;
+                    }
+                    .cont-foot {
+                        gap: 20px;
+                    }
             }
     }
 }

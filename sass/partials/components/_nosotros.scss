@@ -41,6 +41,9 @@
         h2{
             padding: 40px;
         }
+        .video-size {
+            @include medidas(1040px, 290px);
+        }
         .img-nosotros {
             @include medidas(1040px, auto);
             margin: 20px 0 60px 0;
